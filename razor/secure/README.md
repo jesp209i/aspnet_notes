@@ -67,7 +67,8 @@ public void ConfigureServices(IServiceCollection services)
     {
       options.Conventions.AuthorizeFolder("/Admin");
       options.Conventions.AuthorizeFolder("/Account");
-      options.Conventions.AllowAnonymousToPage("/Account/Login"); // en undtagelse til reglen ovenover, så man kan tilgå login siden.
+      // en undtagelse til reglen ovenover, så man kan tilgå login siden.
+      options.Conventions.AllowAnonymousToPage("/Account/Login"); 
     })
 // kode udeladt
 }
