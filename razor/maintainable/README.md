@@ -22,9 +22,17 @@ Brug en passende af følgende metoder:
 - `services.AddScoped<IDinService, DinService>>()`
   - starter en ny instans og bruger samme instans til alle kald under samme web-request.
 
+Med ovenstående på plads er du klar til at lave en dependency injection.
+### DI på en eller flere
 I de views og/eller pages hvor du skal bruge servicen tilføjer du øverst
 ```
-@page // øverste linje
+@page // øverste linje taget med for eksemplets skyld
 @inject IDinService DinService
 ```
-Hvis servicen skal bruges overalt i din app, kan linjen `@inject IDinService DinService` tilføjes til `_ViewImports.cshtml`
+### DI på samtlige sider
+Hvis servicen skal bruges overalt i din app:
+- undlad at gøre ovenstående
+- åben `_ViewImports.cshtml`
+- tilføj linjen `@inject IDinService DinService`.
+
+Nu er `DinService` injected på alle sider i din app.
