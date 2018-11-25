@@ -15,9 +15,9 @@
 - Overfør parametre vha URL. [afsnit 6 i kap.2](https://www.lynda.com/ASP-NET-tutorials/Passing-parameters-URL/630622/679592-4.html)
 
 ## Flere emner
-- [Genbrug af Markup og layout](/reuse/README.md)
-- [Byg vedligeholdbare applikationer](/maintainable/README.md)
-- [Arbejd med data](/data/README.md)
-- [Valider brugerinput og sikr din applikation fra uautoriserede brugere](/secure/README.md)
+- [Genbrug af Markup og layout](/razor/reuse/README.md)
+- [Byg vedligeholdbare applikationer](/razor/maintainable/README.md)
+- [Arbejd med data](/razor/data/README.md)
+- [Valider brugerinput og sikr din applikation fra uautoriserede brugere](/razor/secure/README.md)
 
 Alt på denne og efterfølgende sider er baseret på _[Lynda: ASP.NET Core : Razor Pages](https://www.lynda.com/ASP-NET-tutorials/ASP-NET-Core-Razor-Pages/630622-2.html)_ med mindre andet er angivet.
