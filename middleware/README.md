@@ -1,9 +1,10 @@
 # Middleware
 _kilde: [Lynda: ASP.NET Core : Middleware](https://www.lynda.com/ASP-NET-tutorials/ASP-NET-Core-Middleware/647683-2.html)_
 
-- Middleware bliver kørt i hvert request.
+- Pipelinen med middleware bliver udført i hvert request til serveren.
 - rækkefølgen på middleware har betydning for udførelsen (response)
   - Middlewaren bliver udført oppefra og ned
+- __Placering:__ kan placeres i en mappe der hedder "Middleware" i roden af projektet, men dette er ikke et krav
 
 ## Typer af kald til middleware
 ### app.Use()
