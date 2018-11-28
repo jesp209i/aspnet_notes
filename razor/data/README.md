@@ -113,3 +113,38 @@ public async Task<IActionResult> OnPostAsync()
 }
 // kode udeladt...
 ```
+
+### Hent uploaded billede
+I modellen som billedet hører til skal der bruges følgende:
+```C#
+    public byte[] Image { get; set; }
+
+        public string ImageContentType { get; set; }
+
+        public string GetInlineImageSrc ()
+        {
+            if (Image == null || ImageContentType == null)
+                return null;
+
+            var base64Image = System.Convert.ToBase64String(Image);
+            return $"data:{ImageContentType};base64,{base64Image}";
+        }
+
+        public void SetImage(Microsoft.AspNetCore.Http.IFormFile file)
+        {
+            if (file == null)
+                return;
+
+            ImageContentType = file.ContentType;
+
+            using (var stream = new System.IO.MemoryStream())
+            {
+                file.CopyTo(stream);
+                Image = stream.ToArray();
+            }
+        }
+```
+og i html/cshtml-filen hentes billedet på denne måde:
+```html
+        <img class="img img-thumbnail" src="@recipe.GetInlineImageSrc()" />
+```
