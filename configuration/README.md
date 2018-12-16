@@ -1,4 +1,4 @@
-# Konfiguations filer
+# Opsæt konfiguations filer
 Tilføj en eller flere filer der hedder appSettings.json. __Developmemt__ eller __Production__ kan tilføjes til filenavnene så der er konfigurationsfiler der gælder i forskellige staging miljøer:
 
 - appSettings.Production.json
