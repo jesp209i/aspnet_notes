@@ -5,7 +5,9 @@ Til at teste http requests:
 
 ## Bonus
 - [Opbygning af et request](request.md)
-  - Beskrivelse af nogle af de header man skal sætte ved http-requests
+  - Beskrivelse af nogle af de header man kan/skal sætte ved http-requests
+  - Content Negotiation
+    - [output formatter](outputformatter.md)
 - [Swagger](swagger.md)
   - Til at dokumentere dit API
 - [Http Statuskoder](httpstatuscodes.md)
