@@ -1,6 +1,8 @@
 # aspnet_notes
 Mine noter og kodeeksempler til ASP.NET Core 2.
 
+## Konfiguration
+- [Opsæt konfigurationsfiler](/configuration/README.md)
 
 ## Middleware
  - [Middleware](/middleware/README.md)
