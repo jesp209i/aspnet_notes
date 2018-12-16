@@ -25,7 +25,9 @@ For at tilgå et felt i `appSettings` skrives blot:
 Startup.Configuration["sectionTwo:nextProperty"]
 
 ```
-Se følgende eksempel på en appSettings:
+Da property'en er statisk kan den tilgås overalt i programmet.
+
+Se følgende eksempel på en `appSettings.json`-fil:
 ```js
 {
 "sectionOne": {
