@@ -19,8 +19,6 @@ Mine noter og kodeeksempler til ASP.NET Core 2.
 - [Partial view](/razor/partialView.md) baseret på [Microsofts dokumentation](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/partial?view=aspnetcore-2.1)
 - [ViewComponent](/razor/viewComponent.md) baseret på [Microsofts dokumentation](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/view-components?view=aspnetcore-2.1)
  
-## Concurrency
-Microsoft resourcer:
- - [Handling Concurrency Conflics](https://docs.microsoft.com/en-us/ef/core/saving/concurrency)
- - [Concurrency Tokens](https://docs.microsoft.com/en-us/ef/core/modeling/concurrency)
+## Entity Framework Core
+- [Oversigt](/efcore/README.md)
  
