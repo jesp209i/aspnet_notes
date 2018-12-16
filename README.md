@@ -12,11 +12,18 @@ Mine noter og kodeeksempler til ASP.NET Core 2.
   - [Arbejd med data](/razor/data/README.md)
   - [Valider brugerinput og sikr din applikation fra uautoriserede brugere](/razor/secure/README.md)
 - Ovenstående er på baggrund af: _[Lynda: ASP.NET Core : Razor Pages](https://www.lynda.com/ASP-NET-tutorials/ASP-NET-Core-Razor-Pages/630622-2.html)_
-
-## Razor Andet:
 - [Partial view](/razor/partialView.md) baseret på [Microsofts dokumentation](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/partial?view=aspnetcore-2.1)
 - [ViewComponent](/razor/viewComponent.md) baseret på [Microsofts dokumentation](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/view-components?view=aspnetcore-2.1)
- 
+## HttpRequest
+- [Oversigt](/HttpRequest/README.md)
+  - [Opbygning af request](/HttpRequest/request.md)
+    - [Outputformatter](/HttpRequest/outputformatter.md)
+  - [HTTP statuskoder](/HttpRequest/httpstatuscodes.md)
+- Bonus  
+  - [Swagger](/HttpRequest/swagger.md)
+  - [Postman](/HttpRequest/postman.md)
+  - [Fiddler](/HttpRequest/fiddler.md)
+
 ## Concurrency
 Microsoft resourcer:
  - [Handling Concurrency Conflics](https://docs.microsoft.com/en-us/ef/core/saving/concurrency)
