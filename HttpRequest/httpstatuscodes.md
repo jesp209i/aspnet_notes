@@ -6,11 +6,11 @@ Bruges typisk ikke af API'er
 ## HTTP 2xx
 Alle disse statuskoder indikerer at en forespørgsel er udført succesfuldt.
 
-| Kode | Type | Beskrivelse | Metode i ASP.net Core |
-| ---| --- | --- | --- |
-| 200 | Success | Returnes ved en HttpGet | Ok() |
-| 201 | Created | returneres typisk ved en HttpPost, oprettelse af ny ressource  | Created(),  CreatedAtAction(...),  CreatedAtRoute(..) |
-| 204 | No content | returneres ved en succesfuld request som ikke skal returnere noget, eksempelvis Delete |  NoContent() |
+| Kode | Type | Beskrivelse | Metode i ASP.net Core | HttpVerb |
+| ---| --- | --- | --- | --- |
+| 200 | Success | Returnes ved en HttpGet | Ok() | __HttpGet__ , __HttpPatch__|
+| 201 | Created | returneres typisk ved en HttpPost, oprettelse af ny ressource  | Created(),  CreatedAtAction(...),  CreatedAtRoute(..) | __HttpPost__ |
+| 204 | No content | returneres ved en succesfuld request som ikke skal returnere noget, eksempelvis Delete |  NoContent() | __HttpPut__, __HttpPatch__, __HttpDelete__ |
 
 ## HTTP 3xx
 Bruges typisk ikke af API'er, men kan dog bruges til at fortælle at en ressource har flyttet sig.
