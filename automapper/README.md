@@ -18,3 +18,5 @@ Du bruger en mapping ved at kalde koden:
 ```c#
 var destinationsInstans = Mapper.Map<destinationsKlasse>(kildeInstans);
 ```
+### Andre ressourcer
+- https://dotnetcoretutorials.com/2017/09/23/using-automapper-asp-net-core/
