@@ -1,6 +1,6 @@
-# Entity klasser
+namespace Entities
+{
 
-```c#
     public class City
     {
         [Key] // ikke nødvendigt med denne attribut, da EFC bruger Id som nøgle per konvention.
@@ -16,9 +16,7 @@
         public string Description { get; set; }
         public ICollection<PointsOfInterest> PointsOfInterest { get; set; } = new List<PointsOfInterest>();
     }
-```
 
-```c#
     public class PointsOfInterest
     {
         [Key]
@@ -32,4 +30,4 @@
         public City City { get; set; } // navigation property - pejer automatisk på cityklassens id, 
         public int CityId { get; set; } // per konvention tilføjer man et felt til at holde på fremmednøglen
     }
-```
+}
