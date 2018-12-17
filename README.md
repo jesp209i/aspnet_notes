@@ -1,6 +1,8 @@
 # aspnet_notes
 Mine noter og kodeeksempler til ASP.NET Core 2.
 
+## Konfiguration
+- [Opsæt konfigurationsfiler](/configuration/README.md)
 
 ## Middleware
  - [Middleware](/middleware/README.md)
@@ -14,6 +16,7 @@ Mine noter og kodeeksempler til ASP.NET Core 2.
 - Ovenstående er på baggrund af: _[Lynda: ASP.NET Core : Razor Pages](https://www.lynda.com/ASP-NET-tutorials/ASP-NET-Core-Razor-Pages/630622-2.html)_
 - [Partial view](/razor/partialView.md) baseret på [Microsofts dokumentation](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/partial?view=aspnetcore-2.1)
 - [ViewComponent](/razor/viewComponent.md) baseret på [Microsofts dokumentation](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/view-components?view=aspnetcore-2.1)
+
 ## HttpRequest
 - [Oversigt](/HttpRequest/README.md)
   - [Opbygning af request](/HttpRequest/request.md)
@@ -23,11 +26,12 @@ Mine noter og kodeeksempler til ASP.NET Core 2.
   - [Swagger](/HttpRequest/swagger.md)
   - [Postman](/HttpRequest/postman.md)
   - [Fiddler](/HttpRequest/fiddler.md)
+ 
+## Automapper
+- [Automapper](/automapper/README.md)
 
 ## Concurrency
 Microsoft resourcer:
  - [Handling Concurrency Conflics](https://docs.microsoft.com/en-us/ef/core/saving/concurrency)
  - [Concurrency Tokens](https://docs.microsoft.com/en-us/ef/core/modeling/concurrency)
  
- ## jQuery
- - [jQuery hjælp og ressourcer](/jQuery/README.md)
