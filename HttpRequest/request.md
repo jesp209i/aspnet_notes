@@ -5,6 +5,24 @@ En header og en payload/body.
 
 Payloaden er nogle gange undladt i visse typer af requests (HttpHead)
 
+## Http Verber
+Listen er længere, men her er de mest gængse:
+
+| Navn | attribut i ASP.net | Beskrivelse | HttpSuccesKode |
+|---|---|---|---|
+| Get | `[HttpGet]` | Henter ressource | 200 |
+| Post | `[HttpPost]` | opretter ressource | 201 |
+| Put | `[HttpPut]` | opdaterer ressource, kræver at hele den opdaterede ressource sendes med i requestet | 204 |
+| Patch | `[HttpPatch]` | opdaterer ressource, kun de angivne dele af ressourcen bliver opdateret | 200, 204 |
+| Delete | `[HttpDelete]` | sletter ressourcen | 204 |
+
+Se desuden [statuskoder](httpstatuscodes.md) for mere information om Https statuskoder, blandt andet fejlkoder.
+
+Andre verber:
+- Option
+- Head
+- ...
+
 ## Header
 Headeren indeholde metainformation om requestet. Denne information er lagt i såkaldte headers, der hver især fortæller modtageren noget om hvordan requestet skal behandles. nogle headers fortæller også noget om hvordan et eventuelt svar skal udformes.
 
