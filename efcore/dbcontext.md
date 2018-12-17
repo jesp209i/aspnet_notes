@@ -19,7 +19,26 @@ public class EkstraEntityKlasse
   public EntityKlasse EntityKlasse { get; set; } // navigation property til EntityKlasse
 }
 ```
-### Dependency injection
+### Ekskluder model med Data Annotations
+Brug attributten `[NotMapped]` på den model der ikke skal genereres i databsen
+
+```c#
+public class Blog
+{
+    public int BlogId { get; set; }
+    public string Url { get; set; }
+
+    public BlogMetadata Metadata { get; set; } // navigation property, som ikke bliver mapped til DB
+}
+
+[NotMapped]
+public class BlogMetadata
+{
+    public DateTime LoadedFromDatabase { get; set; }
+}
+```
+
+### Klargør context til Dependency injection
 Registrer dependency'en i `Startup.ConfigureServices()`:
 ```c#
   services.AddDbContext<MinContext>(options => options.UseSqlServer("forbindelses-streng-her!!"));
@@ -38,7 +57,7 @@ class MinContext : DbContext
 
 Nu er `MinContext` klar til at blive constructor injected i controller-klasser eller andre steder det er nødvendigt.
 
-### Sikre sig at databasen er oprettet
+### Sikre at databasen er oprettet
 For at sikre sig at databasen er klar og oprettet når man kører sin kode, kan man udføre dette lille trick:
 ```c#
 class MinContext : DbContext
