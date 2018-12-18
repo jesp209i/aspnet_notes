@@ -1,5 +1,9 @@
 # Seeding af databasen
-Denne side beskriver hvordan du kan fylde data i en tom database. Beskrivelsen kommer fra [PluralSight](https://app.pluralsight.com/player?course=asp-dotnet-core-api-building-first&author=kevin-dockx&name=asp-dotnet-core-api-building-first-m5&clip=6&mode=live).
+Denne side beskriver hvordan du kan fylde data i en tom database. 
+- https://docs.microsoft.com/da-dk/ef/core/modeling/data-seeding
+
+# Pluralsight
+Denne beskrivelse kommer fra [PluralSight](https://app.pluralsight.com/player?course=asp-dotnet-core-api-building-first&author=kevin-dockx&name=asp-dotnet-core-api-building-first-m5&clip=6&mode=live).
 
 Bemærk at denne fremgangsmåde skaber en slags udvidelse til din contextklasse.
 
