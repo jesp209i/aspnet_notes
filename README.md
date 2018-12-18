@@ -32,4 +32,9 @@ Mine noter og kodeeksempler til ASP.NET Core 2.
 
 ## Entity Framework Core
 - [Oversigt](/efcore/README.md)
+  - [Entity klasser](/efcore/entity.md)
+  - [DbContext](/efcore/dbcontext.md)
+  - [Migrationer](/efcore/migration.md)
+  - [Seeding](/efcore/seeding.md)
+  - [Relationer mellem klasser](/efcore/relationships.md)
  
