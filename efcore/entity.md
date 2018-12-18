@@ -34,6 +34,25 @@ Ved CLR typer som ikke tillader Null, vil feltet blive konfigureret til ikke at 
 
 Hvis du vil tvinge et felt til at være påkrævet bruges attributten `[Required]` over propertien.
 
+### Størrelse på felter
+Brug MaxLength attributten til at angive en størrelse på et felt (dvs. hvor "meget data feltet" må indeholde).
 
+`[MaxLength(#)]` udskift # med et tal.
+
+attributten virker kun med array-typer som `string` og `byte[]`. Hvis man ikke angiver en størrelse på felterne vil databasen automatisk bruge så store felter som muligt, eksempelvis `nvarchar(max)` for `string`.
+
+### Concurrency Tokens
+kilde: https://docs.microsoft.com/da-dk/ef/core/modeling/concurrency
+
+Properties bliver aldrig konfigureret som concurrency tokens automatisk. Du kan tilføje en `[ConcurrencyCheck]` over en property som du vil bruge som token.
+
+Hvis du vil have databasen til at håndtere mere af dette for dig, skal du lave en speciel property:
+```c#
+[Timestamp]
+public byte[] Timestamp { get; set; }
+```
+læs mere om at [håndtere concurrency konflikter](https://docs.microsoft.com/da-dk/ef/core/saving/concurrency)
+
+---
 
 kilde: https://docs.microsoft.com/da-dk/ef/core/modeling/ 
