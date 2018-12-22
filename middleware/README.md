@@ -5,6 +5,7 @@ _kilde: [Lynda: ASP.NET Core : Middleware](https://www.lynda.com/ASP-NET-tutoria
 - rækkefølgen på middleware har betydning for udførelsen (response)
   - Middlewaren bliver udført oppefra og ned
 - __Placering:__ kan placeres i en mappe der hedder "Middleware" i roden af projektet, men dette er ikke et krav
+- [Mere om tilpasning af Middleware](custom.md)
 
 ## Typer af kald til middleware
 ### app.Use()
