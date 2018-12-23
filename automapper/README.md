@@ -16,7 +16,8 @@ Du kan tilføje så mange mappings som du vil.
 ## brug AutoMapper
 Du bruger en mapping ved at kalde koden:
 ```c#
-var destinationsInstans = Mapper.Map<destinationsKlasse>(kildeInstans);
+var destinationsInstans = Mapper.Map<DestinationsKlasse>(kildeInstans);
 ```
 ### Andre ressourcer
 - https://dotnetcoretutorials.com/2017/09/23/using-automapper-asp-net-core/
+- https://automapper.readthedocs.io/en/latest/Custom-value-resolvers.html
