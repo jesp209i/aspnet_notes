@@ -6,6 +6,7 @@ Mine noter og kodeeksempler til ASP.NET Core 2.
 
 ## Middleware
  - [Middleware](/middleware/README.md)
+   - [Tilpasset middleware](/middleware/custom.md)
  
 ## Razor / Razorpages
 - [Oversigt og grundlæggende](/razor/README.md)
