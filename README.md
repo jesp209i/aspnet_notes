@@ -1,4 +1,4 @@
-# aspnet_notes
+﻿# aspnet_notes
 Mine noter og kodeeksempler til ASP.NET Core 2.
 
 ## Konfiguration
@@ -31,8 +31,11 @@ Mine noter og kodeeksempler til ASP.NET Core 2.
 ## Automapper
 - [Automapper](/automapper/README.md)
 
-## Concurrency
-Microsoft resourcer:
- - [Handling Concurrency Conflics](https://docs.microsoft.com/en-us/ef/core/saving/concurrency)
- - [Concurrency Tokens](https://docs.microsoft.com/en-us/ef/core/modeling/concurrency)
+## Entity Framework Core
+- [Oversigt](/efcore/README.md)
+  - [Entity klasser](/efcore/entity.md)
+  - [DbContext](/efcore/dbcontext.md)
+  - [Migrationer](/efcore/migration.md)
+  - [Seeding](/efcore/seeding.md)
+  - [Relationer mellem klasser](/efcore/relationships.md)
  
