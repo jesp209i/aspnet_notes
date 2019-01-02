@@ -38,7 +38,7 @@ public class BlogMetadata
 }
 ```
 
-### Klargør context til Dependency injection
+## Startup.cs: Registrer context til Dependency injection
 Registrer dependency'en i `Startup.ConfigureServices()`:
 ```c#
   services.AddDbContext<MinContext>(options => options.UseSqlServer("forbindelses-streng-her!!"));
