@@ -1,10 +1,16 @@
 # SSL forklaring
+SSL bruges til at etablere sikker kommunikation ved hjælp af både asymmetrisk og symmetrisk kryptering.
+
 ## Symmetrisk kryptering
- - shared key / secret - begge sider bruger samme nøgle, den kan både bruges til at kryptere og dekryptere beskeder
+
+ - `Shared key` / `secret` 
+   - begge sider bruger samme `key` eller `secret`, den kan både bruges til at kryptere og dekryptere beskeder
 
 ## Asymmetrisk kryptering
-- public key - denne nøgle kan kryptere en besked (men kan ikke dekryptere!!)
-- private key - denne nøgle kan dekryptere en besked
+- `public key` 
+  - denne nøgle kan kryptere en besked (men kan ikke bruges til at dekryptere beskeder!!)
+- `private key` 
+  - denne nøgle kan dekryptere en besked
 
 ## SSL handshake
 
