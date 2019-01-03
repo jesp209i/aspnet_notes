@@ -24,3 +24,25 @@
 
 ### Hvorfor bruger man ikke asymmetrisk kryptering til al kommunikation?
 Det er meget ressourcekrævende at opretholde asymmetrisk kryptering, hvorfor man kun bruger det til at sende en `shared key`. Denne `shared key` bruges efterfølgende til `symmetrisk kryptering` mellem parterne. Dette er mindre ressourcekrævende og derfor hurtigere.
+
+## Implementer SSL i dit projekt
+### RequireHttpsAttribute
+Her kan du redirecte et Http-kald om til et Https-kald:
+```c#
+public void ConfigureServices(IServiceCollection)
+{
+ // udelagt kode
+ services.AddMvc(opt =>
+ {
+   if (!_env.IsProduction()) { 
+     opt.SslPort = 44388;   // skriv porten der bruges til development
+   }
+   opt.Filters.Add(new RequireHttpsAttribute()); // laver et redirect fra http til https
+ });
+}
+```
+- [Yderligere information](https://docs.microsoft.com/da-dk/aspnet/core/security/enforcing-ssl?view=aspnetcore-2.2)
+  - Linket har desuden alternativ implementering og en advarsel om at bruge redirects i API'er
+  
+### HSTS
+https://docs.microsoft.com/da-dk/aspnet/core/security/enforcing-ssl?view=aspnetcore-2.2&tabs=visual-studio#http-strict-transport-security-protocol-hsts
