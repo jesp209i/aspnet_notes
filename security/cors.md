@@ -65,3 +65,5 @@ public class RandomController : BaseController
 
 }
 ```
+
+[mere om CORS](https://docs.microsoft.com/da-dk/aspnet/core/security/cors?view=aspnetcore-2.2)
