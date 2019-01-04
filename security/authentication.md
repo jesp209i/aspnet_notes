@@ -14,7 +14,7 @@ Bruge credentials til at identificere en bruger i systemet.
 - simpelt system til at gemme bruger identiteter, roller og claims.
   - ikke brugbar til App Authentication
   - gør det nemt at bruge Cookie-baseret authentication (default)
-  - brundlaget for både basal og Token authentication
+  - grundlaget for både basal og Token authentication
   
 ### Identity
 I `Startup.cs`service collection:
