@@ -47,11 +47,16 @@ public class AuthController : Controller
       {
         if (_hasher.VerifyHashedPassword(user, user.PasswordHash, model.Password) == PasswordVerificationResult.Success)
         {
+          var userClaims = await _userMgr.GetClaimsAsync(user);
+        
           var claims = new []
           {
             new claim(JwtRegisteredClaimNames.Sub, user.UserName),
-            new claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
-          };
+            new claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+            new claim(JwtRegisteredClaimNames.GivenName, user.FirstName),
+            new claim(JwtRegisteredClaimNames.FamilyName, user.LastName),
+            new claim(JwtRegisteredClaimNames.Email, user.Email),
+          }.Union(userClaims);
           
           var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("VERYLONGKEYVALUETHATISSECURE"));
           var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
