@@ -110,3 +110,23 @@ public class CredentialModel
 ```
 
 ## Token
+Se `code/AuthController.cs` for hvordan en token forespørges og genereres. Se construktoren og metoden `CreateToken()`.
+
+Brug JWT middelware til at verificere efterfølgende requests:
+```c#
+app.UseIdentity(); // brug den nye
+app.UseJwtBearerAuthentication(new JwtBearerOptions()
+{
+  AutomaticAuthenticate = true,
+  AutomaticChallenge = true,
+  TokenValidationParameters = new TokenValidationParameters()
+  {
+    ValidIssuer = _config["Tokens:Issuer"],
+    ValidAudience = _config["Tokens:Audience"],
+    ValidateIssuerSigningKey = true,
+    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Tokens:Key"])),
+    ValidateLifeTime = true
+  }
+});
+
+```
