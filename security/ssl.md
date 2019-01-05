@@ -51,4 +51,25 @@ public void ConfigureServices(IServiceCollection)
   - Linket har desuden alternativ implementering og en advarsel om at bruge redirects i API'er
   
 ### HSTS
+- HTTP Strict Transport Security Protocol
+
+Når dette er aktiveret accepterer serveren kun kald over HTTPS. (Alt over HTTP bliver ignoreret.) Dette kræver at clienten kan bruge https og forstår HSTS.
+
+Man kan aldrig forhindre en bruger i at sende følsom information over HTTP, men man kan undlade at svare.
+
+Da HSTS ikke egner sig til brug i et udviklingsmiljø fordi HSTS middlewaren ekskluderer loopback adresser som localhost, kan følgende opsætning i HTTP pipelinen bruges.
+```c#
+public void Configure(IApplicationBuilder app, IHostingEnviroment env)
+{
+ if (env.IsDevelopment())
+ {
+  app.UseDeveloperExceptionPage();
+ }
+ else
+ {
+  app.UseExceptionHandler("/Error");
+  app.UseHsts();
+ }
+}
+```
 https://docs.microsoft.com/da-dk/aspnet/core/security/enforcing-ssl?view=aspnetcore-2.2&tabs=visual-studio#http-strict-transport-security-protocol-hsts
