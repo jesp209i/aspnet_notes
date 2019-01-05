@@ -18,10 +18,11 @@ Kilde [Pluralsight](https://app.pluralsight.com/player?course=aspdotnetcore-impl
 
 # Sikre mod misbrug
  - [overhold HTTPS](ssl.md)
- - [request forgery](https://docs.microsoft.com/da-dk/aspnet/core/security/anti-request-forgery?view=aspnetcore-2.2)
+ - [request forgery](antiReqForgery.md)
  - [open redirect attacks](https://docs.microsoft.com/da-dk/aspnet/core/security/preventing-open-redirects?view=aspnetcore-2.2)
  - [XSS](https://docs.microsoft.com/da-dk/aspnet/core/security/cross-site-scripting?view=aspnetcore-2.2)
  - [CORS](cors.md)
 # Sikre brugere
+- [opsætning af Identity](aspnetidentity.md)
 - [Authentication](authentication.md)
 - [Authorization](authorization.md)
