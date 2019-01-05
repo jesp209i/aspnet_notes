@@ -1,6 +1,11 @@
 # Swagger
 Indstil swagger i dit API:
 
+følgende dependencies skal tilføjes:
+- Swashbuckle.AspNetCore.Swagger
+- Swashbuckle.AspNetCore.SwaggerGen
+- Swashbuckle.AspNetCore.SwaggerUI: 
+
 Til din `Startup.ConfigureServices()` tilføjes:
  ```c#
 services.AddSwaggerGen(c =>
